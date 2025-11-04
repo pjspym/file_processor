@@ -52,7 +52,7 @@ void write_to_FIFO(int fd[], char *line)
         if (len > 0)
         {
             response[len] = '\0';
-            printf("→ 서버 응답: %s", response);
+            printf("%s", response);
         }
     }
 
@@ -120,3 +120,4 @@ int main(int argc, char *argv[])
     close(fd[READ]);
     return 0;
 }
+
